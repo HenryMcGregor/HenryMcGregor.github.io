@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technical School</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/unslider.css">
+    <link rel="stylesheet" href="css/unslider-dots.css">
+
+</head>
+<body>
+<header>
+
+    <h1>Technical School</h1>
+        <form id="asd">
+            <input type="text" placeholder="Search..." required>
+            <input type="button" value="Search">
+
+        </form>
+
+</header>
+
+    <nav>
+    <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="ansökning.html">Ansökning och antagning</a></li>
+        <li><a href="om.html">Om oss</a></li>
+        <li><a href="hitta.html">Kontakt</a></li>
+    </ul>
+</nav>
+
+<div class="my-slider">
+    <ul>
+        <li><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/Central_Technical_School.JPG "></li>
+        <li><img src="https://c2.staticflickr.com/8/7494/15699937265_4a7a80a615_b.jpg" alt="Smiley face">
+        </li>
+        <li><img src="https://pixabay.com/static/uploads/photo/2015/03/07/05/24/technology-662833_960_720.jpg" alt="Smiley face"></li>
+    </ul>
+</div>
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/unslider.js"></script>
+<script>
+    jQuery(document).ready(function($) {
+        $('.my-slider').unslider(
+                    {
+                        animation: 'fade',
+                        autoplay: true,
+                        arrows: false
+                }
+        );
+    });
+</script>
+
+<footer>
+    <p>
+        Telefon: 0727109998
+        E-post
+        Henrybui_98@hotmail.com
+    </p>
+    <p>Följ oss på Facebook</p>
+    <p>Följ oss på Instagram</p>
+
+    <p>&copy;; SDF.</p>
+
+</footer>
+
+</body>
+</html>
