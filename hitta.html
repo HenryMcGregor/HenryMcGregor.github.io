@@ -29,22 +29,43 @@
         <li><a href="hitta.html">Kontakt</a></li>
     </ul>
 </nav>
+<form action="" method="">
+    <fieldset id="userdata">  <!-- skapar de rutor som finns runt formulärets delar -->
+        <legend>Vem är du?</legend>
+        <p>
+            <label for"uname"="">Namn:
+            <strong class="required" title="Obligatorisk uppgift">*</strong>
+            </label>
+
+            <input type="text" name="uname" id="uname" required="" placeholder="Förnamn Efternamn">  <!-- placeholder = när rutan är tom visas ett exempel-->
+        </p>
+        <p>
+            <label for="umail">E-Mail:
+                <strong class="required" title="Obligatorisk uppgift">*</strong>
+            </label>
+
+
+            <input type="email" name="umail" id="umail" required="" placeholder="Henry@bar.com">  <!-- email-->
+        </p>
+    </fieldset>
+
 <form action="action_page.php">
-    <fieldset>
-        <legend><h2>Personal information:</h2></legend>
-        Name:<br>
-        <input type="text" name="firstname" value=""><br>
-        E-mail:<br>
-        <input type="text" name="lastname" value=""><br><br>
 
-        <label for="msg">Message:</label>
-    <textarea id="msg"></textarea>
+        <fieldset>
+            <legend>Meddelande</legend><!-- Rubriken för fieldset-->
+            <p>
+                <label for"mmessage"="">Text:
+                <strong class="required" title="Obligatorisk uppgift">*</strong>
+                </label>
+                <textarea id="mmessage" name="mmessage" required="" placeholder="Skriv ditt meddelande. Minst 25 tecken."></textarea>
+            </p>
 
-<div class="button">
-    <button type="submit">Send your message</button>
-</fieldset>
-</div>
-</form><!--Andrew was here-->
+        </fieldset>
+
+        <fieldset id="submitbutton">
+            <input type="submit" value="Skicka">
+        </fieldset>
+</form>
 
 
 <footer>
@@ -55,7 +76,7 @@
     </p>
     <p><a href="https://www.facebook.com/henry.bui.9">Följ oss på Facebook</a></p>
     <p><a href=""Följ oss på Instagram</a></p>
-    <p>&copy;; asdasdasdasdasd.</p>
+    <p>&copy;;Henry Bui</p>
 
 </footer>
 </body>
